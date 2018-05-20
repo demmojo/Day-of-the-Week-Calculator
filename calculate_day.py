@@ -6,7 +6,8 @@ from data_dict import century_dict, year_dict, month_dict
 def calculate_day(day, month, year):
     # Transform year to known year number code
     year_code = str(year)[-2:]
-    century_code = str(year)[:2]
+    century_code = int(str(year)[:2]) % 4
+    print(century_code)
     while True:
         if int(year_code) <= 27:
             year_final = int(year_dict[year_code])
