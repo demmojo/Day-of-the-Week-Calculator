@@ -25,15 +25,15 @@ def user_input():
         else:
             month = input('Please input a month: ')
 
-    year = input('Please input a year after 1600: ')
+    year = input('Please input a year after 1582 AD: ')
 
     while True:
         if year:
             if year.isdigit():
-                if 1600 <= int(year):
+                if 1582 <= int(year):
                     break
                 else:
-                    year = input('Please input a year after 1600: ')
+                    year = input('Please input a year after 1582 AD: ')
         else:
             year = input('Please input a year: ')
 
