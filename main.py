@@ -9,8 +9,7 @@ if __name__ == '__main__':
         print(month_dict_2[str(month)], day + ', ', year, 'is on a', day_dict[str(day_calc)] + '.')
 
         # Continue code until terminated by user
-        print('Would you like to continue? Type n and press Enter to stop')
-        yes_no = input()
+        yes_no = input('Would you like to continue? Type n and press Enter to stop')
         if yes_no == 'n':
             print('Goodbye!')
             break
